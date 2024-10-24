@@ -5,23 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flexbox öva 4</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <main>
       <header>
-        <h1><a href="#">Flexbox</a></h1>
+        <h1 class="text-3xl font-bold">
+          <a class="text-blue-900" href="#">Flexbox</a>
+        </h1>
         <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
+          <ul class="text-lg gap-8">
+            <li><a class="text-blue-900" href="#">Home</a></li>
+            <li><a class="text-blue-900" href="#">About us</a></li>
+            <li><a class="text-blue-900" href="#">Contact</a></li>
           </ul>
         </nav>
       </header>
 
-      <section class="header"><h2>Header</h2></section>
-      <section class="main-section">
-        <h2>Main</h2>
+      <section class="header">
+        <h2 class="text-2xl font-bold text-blue-100 tracking-wider">
+          Flexbox and Tailwind
+          <br />
+          <span class="text-5xl text-blue-300 uppercase">Training</span>
+        </h2>
+        <p class="pt-2 text-blue-200">The struggle is real.</p>
+      </section>
+      <section class="main-section bg-blue-100 text-blue-900">
+        <h2 class="text-3xl font-medium text-blue-800">Main</h2>
         <br />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magni
@@ -31,11 +41,31 @@
         </p>
       </section>
 
-      <aside class="aside aside-1"><h3>Aside 1</h3></aside>
-      <aside class="aside aside-2"><h3>Aside 2</h3></aside>
+      <aside class="aside aside-1 bg-blue-600">
+        <h3 class="text-blue-50">Aside 1</h3>
+      </aside>
+      <aside class="aside aside-2 bg-blue-600">
+        <h3 class="text-blue-50">Aside 2</h3>
+      </aside>
 
-      <footer>
-        <h4>Footer</h4>
+      <footer class="bg-blue-950">
+        <section class="p-6 footer-row-1 text-blue-300 font-extralight text-sm text-left">
+          <h5 class="font-semibold">Information</h5>
+          <p class="pr-10">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia
+            sapiente nesciunt quod iure nostrum aut perspiciatis expedita
+            suscipit natus consequuntur.
+          </p>
+        </section>
+        <section class="p-6 footer-row-2 text-blue-300 font-extralight text-sm text-left">
+          <h5>Home</h5>
+          <h5>About us</h5>
+          <h5>Contact</h5>
+        </section>
+        <section class="p-6 footer-row-3 text-blue-300 font-extralight text-sm text-left">
+          <h5>Github</h5>
+          <h5>LinkedIn</h5>
+        </section>
       </footer>
     </main>
   </body>
