@@ -10,7 +10,14 @@
     --bg-main: rgb(235, 235, 235);
     --bg-aside: rgb(133, 133, 133);
   }
-  
+  /* Center text in safari and hopefully phone */
+  .header, .aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
   header {
     display: flex;
