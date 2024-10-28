@@ -1,1 +1,3 @@
-## Övar på både Flexbox och Tailwind. 
+## Träning
+
+Övar på Flexbox och Tailwind. 
